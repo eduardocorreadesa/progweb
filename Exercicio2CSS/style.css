@@ -1,0 +1,77 @@
+body {
+    background-color: powderblue;
+}
+h1 {
+    color: white;
+}
+h2 {
+    color: red;
+}
+
+.div1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #FF4500;
+    background-color: #FF4500;
+}
+.div2 {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #00FFFF;
+    background-color: #00FFFF;
+}
+.div3 {
+    position: absolute;
+
+    left: 20%;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #FFA500;
+    background-color: #FFA500;
+}
+
+.div4 {
+    position: absolute;
+    top: 80%;
+    left: 20%;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #0000FF;
+    background-color: #0000FF;
+}
+
+.div5 {
+    position: absolute;
+    top: 80%;
+    left: 80%;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #00FF00;
+    background-color: #00FF00;
+}
+
+.div6 {
+    position: absolute;
+    top: 40%;
+    left: 60%;
+    width: 30%;
+    height: 8%;
+       z-index: 1;
+    border: 1px solid #1E90FF;
+    background-color: #1E90FF;
+     border-radius: 12px;
+}
+.div7 {
+    position: absolute;
+    top: 40%;
+    left: 60%;
+    width: 30%;
+    height: 30%;
+     z-index: 0;
+    border: 1px solid #FFFFFF;
+    background-color: #FFFFFF;
+     border-radius: 12px;
+}

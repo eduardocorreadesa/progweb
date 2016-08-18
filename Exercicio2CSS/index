@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="div1"><h1>First Title</h1></div>
+<div class="div2"><h1>and another</h1></div>
+<div class="div3"><h1>Outro Titulo</h1></div>
+<div class="div4"><h1>The fort one</h1></div>
+<div class="div5"><h1>The last</h1></div>
+<div class="div6"><h2>Texto</h2></div>
+<div class="div7"></div>
+
+</body>
+</html>
