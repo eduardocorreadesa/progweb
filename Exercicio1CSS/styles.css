@@ -1,0 +1,49 @@
+body {
+    background-color: white;
+}
+h1 {
+    color: blue;
+}
+p {
+    color: red;
+}
+
+#headerLeft{
+  background-color: #0066ff;
+  border: 1px solid #0066ff;
+  height: 10%;
+  width: 20%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+
+#footerLeft{
+  background-color: #33cc33;
+  border: 1px solid #33cc33;
+  height: 10%;
+  width: 20%;
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+}
+
+#headerRight{
+   background-color: #ffff00;
+  border: 1px solid #ffff00;
+  height: 10%;
+  width: 20%;
+  position: absolute;
+  top: 0%;
+  right: 0%
+}
+
+#footerRight{
+   background-color: #ff0000;
+  border: 1px solid #ff0000;
+  height: 10%;
+  width: 20%;
+  position: absolute;
+  bottom: 0%;
+  right: 0%
+}
