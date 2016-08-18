@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+<table>
+  <tr>
+    <th>Empresa</th>
+    <th>Colaborador</th>
+    <th>Editar</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td><img src="/Users/eduardocorreadesa/Documents/Unisul/9 Fase/ExercicioHTML/Exercicio2/pencil.png" alt="Editar" style="width:50px;height:40px;"> <img src="/Users/eduardocorreadesa/Documents/Unisul/9 Fase/ExercicioHTML/Exercicio2/erase.png" alt="Editar" style="width:50px;height:40px;"></td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+  </tr>
+  <tr>
+    <td>Ernst Handel</td>
+    <td>Roland Mendel</td>
+    <td><img src="/Users/eduardocorreadesa/Documents/Unisul/9 Fase/ExercicioHTML/Exercicio2/pencil.png" alt="Editar" style="width:50px;height:40px;"> <img src="/Users/eduardocorreadesa/Documents/Unisul/9 Fase/ExercicioHTML/Exercicio2/erase.png" alt="Editar" style="width:50px;height:40px;"></td>
+  </tr>
+  <tr>
+    <td>Island Trading</td>
+    <td>Helen Bennett</td>
+    <td><img src="/Users/eduardocorreadesa/Documents/Unisul/9 Fase/ExercicioHTML/Exercicio2/pencil.png" alt="Editar" style="width:50px;height:40px;"> <img src="/Users/eduardocorreadesa/Documents/Unisul/9 Fase/ExercicioHTML/Exercicio2/erase.png" alt="Editar" style="width:50px;height:40px;"></td>
+  </tr>
+  <tr>
+    <td>Laughing Bacchus Winecellars</td>
+    <td>Yoshi Tannamuri</td>
+    <td><img src="/Users/eduardocorreadesa/Documents/Unisul/9 Fase/ExercicioHTML/Exercicio2/pencil.png" alt="Editar" style="width:50px;height:40px;"> <img src="/Users/eduardocorreadesa/Documents/Unisul/9 Fase/ExercicioHTML/Exercicio2/erase.png" alt="Editar" style="width:50px;height:40px;"></td>
+  </tr>
+  <tr>
+    <td><form action="action_page.php">
+<input type="text" name="firstname">
+</form></td>
+    <td><form action="action_page.php">
+<input type="text" name="firstname">
+</form></td>
+    <td><input type="submit"></td>
+  </tr>
+</table>
+
+</body>
+</html>
