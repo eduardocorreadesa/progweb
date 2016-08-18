@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pagina 2</title>
+</head>
+<body>
+
+<form>
+  Empresa:<br>
+  <input type="text" name="empresa"><br>
+  Nome:<br>
+  <input type="text" name="nome"><br>
+  Pais:<br>
+  <input type="text" name="pais"><br>
+  <input type="submit">
+</form>
+
+</body>
+</html>

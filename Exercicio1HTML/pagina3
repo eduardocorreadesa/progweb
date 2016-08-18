@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+  <head>
+  <title>Pagina 2</title>
+  </head>
+
+<p>
+Entre em contato =)
+<a href="mailto:someone@example.com?Subject=Hello%20again" target="_top">Enivar E-mail</a>
+</p>
+
+
+</body>
+</html>
