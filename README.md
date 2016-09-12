@@ -1,2 +1,2 @@
 # progweb
-Disciplicna Programação Web - Unisul
+Disciplina Programação Web - Unisul

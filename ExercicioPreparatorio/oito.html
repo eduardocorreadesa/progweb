@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Titulo</title>
+
+<link rel="stylesheet" href="style.css">
+<script src="jquery-3.1.0.min.js" type="text/javascript"></script>
+<script>
+
+$(document).ready(function(){
+    $("#seletor").click(function(){
+        $("div").slideDown("slow");
+    });
+});
+
+</script>
+</head>
+
+<body>
+
+<div id="panel"></div>
+
+<p>Menu</p>
+  <ul>
+    <li>Redirecionar</li>
+      <ul>
+        <li> <a href="http://www.globo.com">Globo</a></li>
+        <li> <a href="http://www.google.com">Google</a></li>
+      </ul>
+    <li>Layout</li>
+      <ul>
+        <li>Novo layout</li>
+        <li>Novo texto</li>
+      </ul>
+  </ul>
+
+<button id="seletor">Botao</button>
+
+</body>
+
+</html>

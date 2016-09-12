@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body onload="myFunctionOnload()">
+
+<p>1- Leia e escreva</p>
+
+<input type="text" id="myText" value="">
+
+<button onclick="myFunction()">Imprimir em tela</button>
+
+<p id="demo"></p>
+
+Nome: <input type="text" onfocus="myFunctionOnFocus(this)">
+Digite e ira alterar para UpperCase: <input type="text" id="fname" onblur="myFunctionOnBlur()">
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myText").value;
+    document.getElementById("demo").innerHTML = x;
+}
+</script>
+
+
+<script>
+function myFunctionOnload() {
+    alert("2- Evento onload.");
+}
+</script>
+
+
+<script>
+function myFunctionOnFocus(x) {
+    x.style.background = "yellow";
+}
+</script>
+
+
+<script>
+function myFunctionOnBlur() {
+  // alert("6- Evento onblur.");
+    var x = document.getElementById("fname");
+    x.value = x.value.toUpperCase();
+}
+</script>
+
+
+
+
+
+
+</body>
+</html>
