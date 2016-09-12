@@ -11,6 +11,9 @@
                display: none;
                color: red;
            }
+           #number {
+              text-align: right;
+           }
    </style>
 
 <script>
@@ -58,6 +61,13 @@ $(document).ready(function(){
       $("#select").css({"background" : "white"});
       $('#selecti').hide();
     }
+    if($("#number").val()==""){
+      $("#number").css({"background-color" : "#ff00bf"});
+      $('#numberi').show();
+    }else{
+      $("#number").css({"background" : "white"});
+      $('#numberi').hide();
+    }
   });
 });
 </script>
@@ -74,8 +84,9 @@ $(document).ready(function(){
     <input id="check" type="checkbox" name="check" value=""> CheckBox <i id="checki">Preenchimento obrigatório!</i> <br>
     <input id="radio" type="radio" name="radio" value=""> RadioButton <i id="radioi">Preenchimento obrigatório!</i> <br>
     Text: <input id="text" type="text" name="text" value=""> <i id="texti">Preenchimento obrigatório!</i> <br>
+    Number: <input id="number" type="number" name="number" value=""> <i id="numberi">Apenas números. Preenchimento obrigatório!</i> <br>
     Password: <input id="password" type="password" name="password"> <i id="passwordi">Preenchimento obrigatório!</i> <br>
-    <select id="select">
+    Select: <select id="select">
       <option value=""></option>
       <option value="a">A</option>
       <option value="b">B</option>
@@ -83,7 +94,7 @@ $(document).ready(function(){
       <option value="d">D</option>
     </select> <i id="selecti">Preenchimento obrigatório!</i> <br>
     <textarea id="textarea"  rows="10" cols="30"></textarea> <i id="textareai">Preenchimento obrigatório!</i> <br>
-    <input id="botao" type="button"  value="Enviar">
+    <br><input id="botao" type="button"  value="Enviar">
   </form>
 
 </div>
