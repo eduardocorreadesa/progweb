@@ -1,0 +1,21 @@
+
+
+.serif {
+    font-size: 20px;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+
+input[type=text] {
+
+ color: gray;
+
+}
+
+#panel {
+    background-color: #e5eecc;
+    padding: 50px;
+    display: none;
+    position: absolute;
+}
