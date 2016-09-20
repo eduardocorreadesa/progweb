@@ -1,0 +1,111 @@
+JFDML JFormDesigner: "5.2.4.0.321" Java: "1.8.0_101" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+			"$columnSpecs": "default, labelcompgap, default, labelcompgap, default, labelcompgap, default, labelcompgap, default, labelcompgap, default, labelcompgap, default, labelcompgap, default, labelcompgap, default, labelcompgap, default, labelcompgap, default, labelcompgap, default, labelcompgap, default, labelcompgap, default, labelcompgap, default, labelcompgap, default, labelcompgap, default"
+			"$rowSpecs": "default, linegap, default, linegap, default, linegap, default, linegap, default, linegap, default, linegap, default, linegap, default, linegap, default, linegap, default, linegap, default, linegap, default"
+		} ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+				"$columnSpecs": "default, labelcompgap, default, labelcompgap, default, labelcompgap, default, labelcompgap, default, labelcompgap, default, labelcompgap, default, labelcompgap, default, labelcompgap, default, labelcompgap, default"
+				"$rowSpecs": "default, linegap, default, linegap, default, linegap, default, linegap, default, linegap, default, linegap, default, linegap, default, linegap, default, linegap, default"
+			} ) {
+				name: "panel1"
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 1
+				"gridY": 1
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "Cadastro de Correntista"
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 17
+				"gridY": 3
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "Nome:"
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 1
+				"gridY": 7
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField1"
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 3
+				"gridY": 7
+				"gridWidth": 7
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "CPF:"
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 1
+				"gridY": 9
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField2"
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 3
+				"gridY": 9
+				"gridWidth": 7
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": "Data Nascimento:"
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 1
+				"gridY": 11
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField3"
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 3
+				"gridY": 11
+				"gridWidth": 7
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+				"text": "Sexo:"
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 1
+				"gridY": 13
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "comboBox1"
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 3
+				"gridY": 13
+				"gridWidth": 7
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label6"
+				"text": "Estado Civil:"
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 1
+				"gridY": 15
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "comboBox2"
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 3
+				"gridY": 15
+				"gridWidth": 7
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "Cadastrar"
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 29
+				"gridY": 21
+				"hAlign": sfield com.jgoodies.forms.layout.CellConstraints CENTER
+				"vAlign": sfield com.jgoodies.forms.layout.CellConstraints CENTER
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 700, 450 )
+		} )
+	}
+}

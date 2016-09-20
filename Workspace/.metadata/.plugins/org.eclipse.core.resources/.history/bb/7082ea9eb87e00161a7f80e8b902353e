@@ -1,0 +1,119 @@
+/*
+ * Created by JFormDesigner on Sun Sep 18 22:00:54 BRT 2016
+ */
+
+package views;
+
+import javax.swing.JButton;
+import javax.swing.JComboBox;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+
+import com.jgoodies.forms.factories.CC;
+import com.jgoodies.forms.layout.FormLayout;
+
+/**
+ * @author Eduardo de SÃ¡
+ */
+public class Home extends JPanel {
+	public Home() {
+		initComponents();
+	}
+
+	private void initComponents() {
+		// JFormDesigner - Component initialization - DO NOT MODIFY  //GEN-BEGIN:initComponents
+		// Generated using JFormDesigner Evaluation license - Eduardo de SÃ¡
+		panel1 = new JPanel();
+		label2 = new JLabel();
+		label1 = new JLabel();
+		textField1 = new JTextField();
+		label3 = new JLabel();
+		textField2 = new JTextField();
+		label4 = new JLabel();
+		textField3 = new JTextField();
+		label5 = new JLabel();
+		comboBox1 = new JComboBox();
+		button2 = new JButton();
+		label6 = new JLabel();
+		comboBox2 = new JComboBox();
+		button1 = new JButton();
+
+		//======== this ========
+
+		// JFormDesigner evaluation mark
+		setBorder(new javax.swing.border.CompoundBorder(
+			new javax.swing.border.TitledBorder(new javax.swing.border.EmptyBorder(0, 0, 0, 0),
+				"JFormDesigner Evaluation", javax.swing.border.TitledBorder.CENTER,
+				javax.swing.border.TitledBorder.BOTTOM, new java.awt.Font("Dialog", java.awt.Font.BOLD, 12),
+				java.awt.Color.red), getBorder())); addPropertyChangeListener(new java.beans.PropertyChangeListener(){public void propertyChange(java.beans.PropertyChangeEvent e){if("border".equals(e.getPropertyName()))throw new RuntimeException();}});
+
+		setLayout(new FormLayout(
+			"16*(default, $lcgap), default",
+			"11*(default, $lgap), default"));
+
+		//======== panel1 ========
+		{
+			panel1.setLayout(new FormLayout(
+				"9*(default, $lcgap), default",
+				"10*(default, $lgap), default"));
+
+			//---- label2 ----
+			label2.setText("Nome:");
+			panel1.add(label2, CC.xy(1, 5));
+		}
+		add(panel1, CC.xy(1, 1));
+
+		//---- label1 ----
+		label1.setText("Cadastro de Correntista");
+		add(label1, CC.xy(17, 3));
+		add(textField1, CC.xywh(3, 7, 7, 1));
+
+		//---- label3 ----
+		label3.setText("CPF:");
+		add(label3, CC.xy(1, 9));
+		add(textField2, CC.xywh(3, 9, 7, 1));
+
+		//---- label4 ----
+		label4.setText("Data Nascimento:");
+		add(label4, CC.xy(1, 11));
+		add(textField3, CC.xywh(3, 11, 7, 1));
+
+		//---- label5 ----
+		label5.setText("Sexo:");
+		add(label5, CC.xy(1, 13));
+		add(comboBox1, CC.xywh(3, 13, 7, 1));
+
+		//---- button2 ----
+		button2.setText("text");
+		add(button2, CC.xy(19, 13));
+
+		//---- label6 ----
+		label6.setText("Estado Civil:");
+		add(label6, CC.xy(1, 15));
+		add(comboBox2, CC.xywh(3, 15, 7, 1));
+
+		//---- button1 ----
+		button1.setText("Cadastrar");
+		add(button1, CC.xy(29, 21, CC.CENTER, CC.CENTER));
+		// JFormDesigner - End of component initialization  //GEN-END:initComponents
+	}
+
+	// JFormDesigner - Variables declaration - DO NOT MODIFY  //GEN-BEGIN:variables
+	// Generated using JFormDesigner Evaluation license - Eduardo de SÃ¡
+	private JPanel panel1;
+	private JLabel label2;
+	private JLabel label1;
+	private JTextField textField1;
+	private JLabel label3;
+	private JTextField textField2;
+	private JLabel label4;
+	private JTextField textField3;
+	private JLabel label5;
+	private JComboBox comboBox1;
+	private JButton button2;
+	private JLabel label6;
+	private JComboBox comboBox2;
+	private JButton button1;
+	// JFormDesigner - End of variables declaration  //GEN-END:variables
+}

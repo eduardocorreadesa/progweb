@@ -1,0 +1,11 @@
+package controllers;
+
+import views.Home;
+
+public class App {
+	public static void main( String[] args )
+	{
+		Home newFrame = new Home();
+		newFrame.setVisible(true);
+	}
+}
