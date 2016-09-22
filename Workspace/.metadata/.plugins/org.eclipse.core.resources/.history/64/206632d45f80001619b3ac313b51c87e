@@ -1,0 +1,34 @@
+package controllers;
+
+import java.net.UnknownHostException;
+
+import com.mongodb.BasicDBObject;
+import com.mongodb.DB;
+import com.mongodb.DBCollection;
+import com.mongodb.MongoClient;
+import com.mongodb.MongoClientURI;
+
+public class PessoaJuridicaCollection {
+	
+	public void createPessoaJuridica(String nomeFantasia, 
+			String cnpj) throws UnknownHostException{
+
+		BasicDBObject pessoaJuridica = new BasicDBObject();
+		pessoaJuridica.put("nomeFantasia", nomeFantasia);
+		pessoaJuridica.put("cnpj", cnpj);
+
+		try{     
+
+			MongoClientURI uri; 
+			uri = new MongoClientURI("mongodb://eduardodesaa:senhasenha@ds017256.mlab.com:17256/projetoproweb");
+			MongoClient client = new MongoClient(uri);
+			DB db = client.getDB(uri.getDatabase());
+
+			DBCollection financeiro = db.getCollection("pessoaJuridica");
+			financeiro.insert(pessoaJuridica);
+		}catch(Exception e){
+			System.out.print("Deu ruim! "+e);
+		}
+	}
+
+}

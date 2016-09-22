@@ -9,6 +9,7 @@ import java.net.UnknownHostException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+import controllers.PessoaJuridicaCollection;
 import model.PessoaJuridica;
 
 /**
@@ -39,7 +40,6 @@ public class CadastrarPessoaJuridica extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
         inputNomeFantasia = new javax.swing.JTextField();
         inputCNPJ = new javax.swing.JTextField();
 
@@ -52,7 +52,7 @@ public class CadastrarPessoaJuridica extends javax.swing.JFrame {
             }
         });
 
-        btnCancelar.setText("Cancelar");
+        btnCancelar.setText("Voltar");
         btnCancelar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnCancelarActionPerformed(evt);
@@ -64,8 +64,6 @@ public class CadastrarPessoaJuridica extends javax.swing.JFrame {
         jLabel2.setText("Nome Fantasia:");
 
         jLabel3.setText("CNPJ:");
-
-        jLabel4.setText("Socios:");
 
         inputCNPJ.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -94,8 +92,7 @@ public class CadastrarPessoaJuridica extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel3)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(inputCNPJ))
-                    .addComponent(jLabel4))
+                        .addComponent(inputCNPJ)))
                 .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -110,9 +107,7 @@ public class CadastrarPessoaJuridica extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
                     .addComponent(inputCNPJ, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel4)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 133, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 155, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnSalvar)
                     .addComponent(btnCancelar))
@@ -146,13 +141,13 @@ public class CadastrarPessoaJuridica extends javax.swing.JFrame {
     private void btnSalvarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalvarActionPerformed
         
         try {
-        String nomeFantasia = inputNomeFantasia.getText();
-        String cnpj = inputCNPJ.getText();
- //       String sexo = inputSexo.getSelectedItem().toString();
- //       String estadoCivil = inputEstadoCivil.getSelectedItem().toString();
+        	PessoaJuridica pessoaJuridica = new PessoaJuridica();
+        	
+        pessoaJuridica.setNomeFantasia(inputNomeFantasia.getText());
+        pessoaJuridica.setCnpj(inputCNPJ.getText());
         
-        PessoaJuridica pessoaJuridica = new PessoaJuridica();
-        pessoaJuridica.createPessoaJuridica(nomeFantasia, cnpj);
+        PessoaJuridicaCollection pessoaJuridicaCollection = new PessoaJuridicaCollection();
+        pessoaJuridicaCollection.createPessoaJuridica(pessoaJuridica);
         
         inputNomeFantasia.setText("");
         inputCNPJ.setText("");       
@@ -210,7 +205,6 @@ public class CadastrarPessoaJuridica extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }

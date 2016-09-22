@@ -36,6 +36,8 @@ public class Home extends javax.swing.JFrame {
         btnCadastrarPessoaJuridica = new javax.swing.JButton();
         btnListarPessoaFisica = new javax.swing.JButton();
         btnListarPessoaJuridica = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
+        btnListarAgenciaConta = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -65,26 +67,44 @@ public class Home extends javax.swing.JFrame {
         });
 
         btnListarPessoaJuridica.setText("Listar");
+        btnListarPessoaJuridica.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnListarPessoaJuridicaActionPerformed(evt);
+            }
+        });
+
+        jLabel3.setText("Agencia/Conta por Correntista:");
+
+        btnListarAgenciaConta.setText("Listar");
+        btnListarAgenciaConta.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnListarAgenciaContaActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addGap(0, 18, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnCadastrarPessoaJuridica)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 24, Short.MAX_VALUE)
-                        .addComponent(btnListarPessoaJuridica))
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel3)
+                            .addComponent(jLabel2))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(btnCadastrarPessoaJuridica))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btnCadastrarPessoaFisica)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnListarPessoaFisica)))
-                .addGap(112, 112, 112))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(btnCadastrarPessoaFisica)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnListarPessoaFisica)
+                    .addComponent(btnListarPessoaJuridica)
+                    .addComponent(btnListarAgenciaConta))
+                .addGap(94, 94, 94))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -99,7 +119,11 @@ public class Home extends javax.swing.JFrame {
                     .addComponent(jLabel2)
                     .addComponent(btnCadastrarPessoaJuridica)
                     .addComponent(btnListarPessoaJuridica))
-                .addContainerGap(230, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel3)
+                    .addComponent(btnListarAgenciaConta))
+                .addContainerGap(195, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -130,6 +154,16 @@ public class Home extends javax.swing.JFrame {
         JFrame janela = new ListarPessoaFisica();
     janela.setVisible(true);
     }//GEN-LAST:event_btnListarPessoaFisicaActionPerformed
+
+    private void btnListarPessoaJuridicaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnListarPessoaJuridicaActionPerformed
+          JFrame janela = new ListarPessoaJuridica();
+    janela.setVisible(true);
+    }//GEN-LAST:event_btnListarPessoaJuridicaActionPerformed
+
+    private void btnListarAgenciaContaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnListarAgenciaContaActionPerformed
+        JFrame janela = new ListarAgenciaConta();
+    janela.setVisible(true);
+    }//GEN-LAST:event_btnListarAgenciaContaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -169,10 +203,12 @@ public class Home extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnCadastrarPessoaFisica;
     private javax.swing.JButton btnCadastrarPessoaJuridica;
+    private javax.swing.JButton btnListarAgenciaConta;
     private javax.swing.JButton btnListarPessoaFisica;
     private javax.swing.JButton btnListarPessoaJuridica;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }

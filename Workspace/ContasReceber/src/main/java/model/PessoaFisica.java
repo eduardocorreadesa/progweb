@@ -53,6 +53,20 @@ public class PessoaFisica {
 	public void setConta(String conta) {
 		this.conta = conta;
 	}
+	
+	public String getSaldo() {
+		return saldo;
+	}
+	public void setSaldo(String saldo) {
+		this.saldo = saldo;
+	}
+	public String getLimite() {
+		return limite;
+	}
+	public void setLimite(String limite) {
+		this.limite = limite;
+	}
+	String limite;
 	String nome;
 	String cpf;
 	String dataNascimento;
@@ -60,5 +74,6 @@ public class PessoaFisica {
 	String estadoCivil;
 	String agencia;
 	String conta;
+	String saldo;
 
 }
