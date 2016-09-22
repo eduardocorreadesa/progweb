@@ -34,10 +34,12 @@ public class Home extends javax.swing.JFrame {
         btnCadastrarPessoaFisica = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         btnCadastrarPessoaJuridica = new javax.swing.JButton();
+        btnListarPessoaFisica = new javax.swing.JButton();
+        btnListarPessoaJuridica = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setText("Pessoa Fisica");
+        jLabel1.setText("Pessoa Fisica:");
 
         btnCadastrarPessoaFisica.setText("Cadastrar");
         btnCadastrarPessoaFisica.addActionListener(new java.awt.event.ActionListener() {
@@ -46,7 +48,7 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
-        jLabel2.setText("Pessoa Juridica");
+        jLabel2.setText("Pessoa Juridica:");
 
         btnCadastrarPessoaJuridica.setText("Cadastrar");
         btnCadastrarPessoaJuridica.addActionListener(new java.awt.event.ActionListener() {
@@ -55,52 +57,60 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
+        btnListarPessoaFisica.setText("Listar");
+        btnListarPessoaFisica.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnListarPessoaFisicaActionPerformed(evt);
+            }
+        });
+
+        btnListarPessoaJuridica.setText("Listar");
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addContainerGap()
+                        .addComponent(jLabel2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnCadastrarPessoaJuridica)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 24, Short.MAX_VALUE)
+                        .addComponent(btnListarPessoaJuridica))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel2))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(btnCadastrarPessoaFisica)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 73, Short.MAX_VALUE)
-                        .addComponent(btnCadastrarPessoaJuridica)))
-                .addContainerGap())
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnListarPessoaFisica)))
+                .addGap(112, 112, 112))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(27, 27, 27)
+                .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
-                    .addComponent(jLabel2))
+                    .addComponent(btnCadastrarPessoaFisica)
+                    .addComponent(btnListarPessoaFisica))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnCadastrarPessoaFisica)
-                    .addComponent(btnCadastrarPessoaJuridica))
-                .addContainerGap(124, Short.MAX_VALUE))
+                    .addComponent(jLabel2)
+                    .addComponent(btnCadastrarPessoaJuridica)
+                    .addComponent(btnListarPessoaJuridica))
+                .addContainerGap(230, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(96, 96, 96)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(17, Short.MAX_VALUE))
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(36, 36, 36)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(62, Short.MAX_VALUE))
+            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
@@ -115,6 +125,11 @@ public class Home extends javax.swing.JFrame {
         JFrame janela = new CadastrarPessoaJuridica();
     janela.setVisible(true);
     }//GEN-LAST:event_btnCadastrarPessoaJuridicaActionPerformed
+
+    private void btnListarPessoaFisicaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnListarPessoaFisicaActionPerformed
+        JFrame janela = new ListarPessoaFisica();
+    janela.setVisible(true);
+    }//GEN-LAST:event_btnListarPessoaFisicaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -154,6 +169,8 @@ public class Home extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnCadastrarPessoaFisica;
     private javax.swing.JButton btnCadastrarPessoaJuridica;
+    private javax.swing.JButton btnListarPessoaFisica;
+    private javax.swing.JButton btnListarPessoaJuridica;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
