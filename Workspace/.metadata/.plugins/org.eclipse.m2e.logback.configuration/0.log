@@ -1350,3 +1350,16 @@
 2016-09-21 22:24:21,350 [Worker-161] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2016-09-21 22:24:21,352 [Worker-161] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2016-09-21 22:24:21,352 [Worker-161] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/eduardocorreadesa/Documents/progweb-git/Workspace/ContasReceber/src/test/resources
+2016-09-21 22:33:08,822 [Worker-163] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-09-21 22:33:08,823 [Worker-163] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-09-21 22:33:08,825 [Worker-163] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-09-21 22:33:08,825 [Worker-163] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/eduardocorreadesa/Documents/progweb-git/Workspace/ContasReceber/src/test/resources
+2016-09-21 22:33:09,952 [Worker-174] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-09-21 22:33:09,952 [Worker-174] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-09-21 22:33:09,954 [Worker-174] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-09-21 22:33:09,954 [Worker-174] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/eduardocorreadesa/Documents/progweb-git/Workspace/ContasReceber/src/test/resources
+2016-09-22 19:57:38,447 [Worker-190] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-09-22 19:57:38,451 [Worker-190] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-09-22 19:57:38,453 [Worker-190] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-09-22 19:57:38,453 [Worker-190] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/eduardocorreadesa/Documents/progweb-git/Workspace/ContasReceber/src/test/resources
+2016-09-22 19:58:30,797 [Worker-0] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.

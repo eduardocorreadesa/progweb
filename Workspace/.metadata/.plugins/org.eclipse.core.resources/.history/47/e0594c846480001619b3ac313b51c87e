@@ -56,6 +56,9 @@ public class PessoaJuridicaCollection {
 				pessoaJuridica.setCnpj(docsDBObject.get("cnpj").toString());
 				listPessoaJuridica.add(pessoaJuridica);
 				pessoaJuridica = new PessoaJuridica();
+				//				System.out.println(
+				//						pessoa.getAgencia() + pessoa.getConta() + pessoa.getCpf() + pessoa.getDataNascimento() + pessoa.getEstadoCivil() +
+				//						pessoa.getNome()+ pessoa.getSexo());
 			}
 
 		}catch(Exception e){
