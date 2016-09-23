@@ -12,6 +12,22 @@ package model;
 public class PessoaJuridica {
 
 	String nomeFantasia;
+	String cnpj;
+	String saldo;
+	String limite;
+
+	public String getLimite() {
+		return limite;
+	}
+	public void setLimite(String limite) {
+		this.limite = limite;
+	}
+	public String getSaldo() {
+		return saldo;
+	}
+	public void setSaldo(String saldo) {
+		this.saldo = saldo;
+	}
 	public String getNomeFantasia() {
 		return nomeFantasia;
 	}
@@ -24,6 +40,6 @@ public class PessoaJuridica {
 	public void setCnpj(String cnpj) {
 		this.cnpj = cnpj;
 	}
-	String cnpj;
+
 
 }

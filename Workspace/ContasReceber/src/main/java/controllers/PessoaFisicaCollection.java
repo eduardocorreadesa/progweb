@@ -4,12 +4,9 @@ import java.net.UnknownHostException;
 import java.util.ArrayList;
 
 import com.mongodb.BasicDBObject;
-import com.mongodb.DB;
 import com.mongodb.DBCollection;
 import com.mongodb.DBCursor;
 import com.mongodb.DBObject;
-import com.mongodb.MongoClient;
-import com.mongodb.MongoClientURI;
 
 import model.PessoaFisica;
 /**
@@ -19,26 +16,19 @@ import model.PessoaFisica;
 public class PessoaFisicaCollection {
 
 	public void createPessoaFisica(model.PessoaFisica pessoa) throws UnknownHostException{
+		try{  
+			BasicDBObject pessoaFisica = new BasicDBObject();
+			pessoaFisica.put("nome", pessoa.getNome());
+			pessoaFisica.put("cpf", pessoa.getCpf());
+			pessoaFisica.put("dataNascimento", pessoa.getDataNascimento());
+			pessoaFisica.put("sexo", pessoa.getSexo());
+			pessoaFisica.put("estadoCivil", pessoa.getEstadoCivil());
+			pessoaFisica.put("agencia", pessoa.getAgencia());
+			pessoaFisica.put("conta", pessoa.getConta());
+			pessoaFisica.put("limite", pessoa.getLimite());
+			pessoaFisica.put("saldo", pessoa.getSaldo());
 
-		BasicDBObject pessoaFisica = new BasicDBObject();
-		pessoaFisica.put("nome", pessoa.getNome());
-		pessoaFisica.put("cpf", pessoa.getCpf());
-		pessoaFisica.put("dataNascimento", pessoa.getDataNascimento());
-		pessoaFisica.put("sexo", pessoa.getSexo());
-		pessoaFisica.put("estadoCivil", pessoa.getEstadoCivil());
-		pessoaFisica.put("agencia", pessoa.getAgencia());
-		pessoaFisica.put("conta", pessoa.getConta());
-                pessoaFisica.put("limite", pessoa.getLimite());
-                pessoaFisica.put("saldo", pessoa.getSaldo());
-
-		try{     
-
-			MongoClientURI uri; 
-			uri = new MongoClientURI("mongodb://eduardodesaa:senhasenha@ds017256.mlab.com:17256/projetoproweb");
-			MongoClient client = new MongoClient(uri);
-			DB db = client.getDB(uri.getDatabase());
-
-			DBCollection financeiro = db.getCollection("pessoaFisica");
+			DBCollection financeiro = ConnectCollection.connectCollection("pessoaFisica");
 			financeiro.insert(pessoaFisica);
 		}catch(Exception e){
 			System.out.print("Deu ruim! "+e);
@@ -51,13 +41,7 @@ public class PessoaFisicaCollection {
 		PessoaFisica pessoa = new PessoaFisica();
 		try{     
 
-			MongoClientURI uri; 
-			uri = new MongoClientURI("mongodb://eduardodesaa:senhasenha@ds017256.mlab.com:17256/projetoproweb");
-			MongoClient client = new MongoClient(uri);
-			DB db = client.getDB(uri.getDatabase());
-
-			DBCollection financeiro = db.getCollection("pessoaFisica");
-
+			DBCollection financeiro = ConnectCollection.connectCollection("pessoaFisica");
 			BasicDBObject findQuery = new BasicDBObject();
 			DBCursor docs = financeiro.find(findQuery);
 
@@ -70,13 +54,10 @@ public class PessoaFisicaCollection {
 				pessoa.setDataNascimento(docsDBObject.get("dataNascimento").toString());
 				pessoa.setEstadoCivil(docsDBObject.get("estadoCivil").toString());
 				pessoa.setSexo(docsDBObject.get("sexo").toString());
-                                pessoa.setLimite(docsDBObject.get("limite").toString());
-                                pessoa.setSaldo(docsDBObject.get("saldo").toString());
+				pessoa.setLimite(docsDBObject.get("limite").toString());
+				pessoa.setSaldo(docsDBObject.get("saldo").toString());
 				listPessoa.add(pessoa);
 				pessoa = new PessoaFisica();
-				//				System.out.println(
-				//						pessoa.getAgencia() + pessoa.getConta() + pessoa.getCpf() + pessoa.getDataNascimento() + pessoa.getEstadoCivil() +
-				//						pessoa.getNome()+ pessoa.getSexo());
 			}
 
 		}catch(Exception e){
