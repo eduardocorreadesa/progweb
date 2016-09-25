@@ -1,0 +1,70 @@
+package controllers;
+
+import java.net.UnknownHostException;
+
+import com.mongodb.BasicDBObject;
+import com.mongodb.DBCollection;
+import com.mongodb.DBCursor;
+import com.mongodb.DBObject;
+
+import model.PessoaFisica;
+import model.PessoaJuridica;
+
+public class OperacaoFinanceira {
+
+	public static String getSaldoPessoaJuridicaPessoaFisica(String cpfCnpj) throws UnknownHostException{
+		DBObject docsDBObject = null;
+		PessoaFisica pessoa = new PessoaFisica();
+		PessoaJuridica juridica = new PessoaJuridica();
+		String saldo = null;
+		try{     
+
+			DBCollection financeiro = ConnectCollection.connectCollection("pessoaFisica");
+			BasicDBObject findQuery = new BasicDBObject("cpf", new BasicDBObject("$gte",cpfCnpj));
+			DBCursor docs = financeiro.find(findQuery);
+
+			while(docs.hasNext()){
+				docsDBObject = docs.next();
+				pessoa.setNome(docsDBObject.get("nome").toString());
+				pessoa.setCpf(docsDBObject.get("cpf").toString());
+				pessoa.setAgencia(docsDBObject.get("agencia").toString());
+				pessoa.setConta(docsDBObject.get("conta").toString());
+				pessoa.setDataNascimento(docsDBObject.get("dataNascimento").toString());
+				pessoa.setEstadoCivil(docsDBObject.get("estadoCivil").toString());
+				pessoa.setSexo(docsDBObject.get("sexo").toString());
+				pessoa.setLimite(docsDBObject.get("limite").toString());
+				pessoa.setSaldo(docsDBObject.get("saldo").toString());
+				
+			}
+			saldo = pessoa.getSaldo();
+			if(pessoa.getSaldo().equals(null) ||  pessoa.getSaldo().equals("")){
+				
+				financeiro = ConnectCollection.connectCollection("pessoaJuridica");
+				findQuery = new BasicDBObject("cpf", new BasicDBObject("$gte",cpfCnpj));
+				docs = financeiro.find(findQuery);
+
+				while(docs.hasNext()){
+					docsDBObject = docs.next();
+					pessoa.setNome(docsDBObject.get("nome").toString());
+					pessoa.setCpf(docsDBObject.get("cpf").toString());
+					pessoa.setAgencia(docsDBObject.get("agencia").toString());
+					pessoa.setConta(docsDBObject.get("conta").toString());
+					pessoa.setDataNascimento(docsDBObject.get("dataNascimento").toString());
+					pessoa.setEstadoCivil(docsDBObject.get("estadoCivil").toString());
+					pessoa.setSexo(docsDBObject.get("sexo").toString());
+					pessoa.setLimite(docsDBObject.get("limite").toString());
+					pessoa.setSaldo(docsDBObject.get("saldo").toString());
+					
+				}
+				saldo = pessoa.getSaldo();
+				
+				
+			}
+		}catch(Exception e){
+			System.out.print("Deu ruim pra retornar na Collection! "+e);
+		}
+
+		return saldo;
+	}
+	
+}
