@@ -53,8 +53,8 @@ public class OperacaoFinanceira {
 						juridica.setCnpj(docsDBObject.get("cnpj").toString());
 						juridica.setLimite(docsDBObject.get("limite").toString());
 						juridica.setSaldo(docsDBObject.get("saldo").toString());
-                                                juridica.setConta(docsDBObject.get("conta").toString());
-                                                juridica.setAgencia(docsDBObject.get("agencia").toString());
+						juridica.setConta(docsDBObject.get("conta").toString());
+						juridica.setAgencia(docsDBObject.get("agencia").toString());
 						System.out.println(juridica.getSaldo());
 
 					}
@@ -114,8 +114,8 @@ public class OperacaoFinanceira {
 					juridica.setCnpj(docsDBObject.get("cnpj").toString());
 					juridica.setLimite(docsDBObject.get("limite").toString());
 					juridica.setSaldo(docsDBObject.get("saldo").toString());
-                                        juridica.setAgencia(docsDBObject.get("agencia").toString());
-                                        juridica.setConta(docsDBObject.get("conta").toString());
+					juridica.setAgencia(docsDBObject.get("agencia").toString());
+					juridica.setConta(docsDBObject.get("conta").toString());
 
 				}
 
@@ -127,8 +127,8 @@ public class OperacaoFinanceira {
 			System.out.print("debitarSaldo "+e);
 		}
 	}
-        
-        public static void depositarSaldo(String cpfCnpj, String valorDepositar){
+
+	public static void depositarSaldo(String cpfCnpj, String valorDepositar){
 
 		DBObject docsDBObject = null;
 		PessoaFisica pessoa = new PessoaFisica();
@@ -173,8 +173,8 @@ public class OperacaoFinanceira {
 					juridica.setCnpj(docsDBObject.get("cnpj").toString());
 					juridica.setLimite(docsDBObject.get("limite").toString());
 					juridica.setSaldo(docsDBObject.get("saldo").toString());
-                                        juridica.setConta(docsDBObject.get("conta").toString());
-                                        juridica.setAgencia(docsDBObject.get("agencia").toString());
+					juridica.setConta(docsDBObject.get("conta").toString());
+					juridica.setAgencia(docsDBObject.get("agencia").toString());
 
 				}
 
@@ -190,8 +190,7 @@ public class OperacaoFinanceira {
 	public static void updatePessoaFisica(PessoaFisica pessoa){
 
 		DBCollection financeiro = ConnectCollection.connectCollection("pessoaFisica");
-//		BasicDBObject updateQuery = new BasicDBObject("cpf", new BasicDBObject("$gte",pessoa.getCpf())); 
-BasicDBObject updateQuery = new BasicDBObject("cpf", pessoa.getCpf());
+		BasicDBObject updateQuery = new BasicDBObject("cpf", pessoa.getCpf());
 		financeiro.update(updateQuery, new BasicDBObject("$set", new BasicDBObject("saldo", pessoa.getSaldo())));
 
 	}
@@ -199,8 +198,7 @@ BasicDBObject updateQuery = new BasicDBObject("cpf", pessoa.getCpf());
 	public static void updatePessoaJuridica(PessoaJuridica juridica){
 
 		DBCollection financeiro = ConnectCollection.connectCollection("pessoaJuridica");
-//		BasicDBObject updateQuery = new BasicDBObject("cnpj", new BasicDBObject("$gte",juridica.getCnpj())); 
-BasicDBObject updateQuery = new BasicDBObject("cnpj", juridica.getCnpj()); 
+		BasicDBObject updateQuery = new BasicDBObject("cnpj", juridica.getCnpj()); 
 		financeiro.update(updateQuery, new BasicDBObject("$set", new BasicDBObject("saldo", juridica.getSaldo())));
 
 	}
@@ -214,8 +212,8 @@ BasicDBObject updateQuery = new BasicDBObject("cnpj", juridica.getCnpj());
 		valor = String.valueOf(doubleValor);
 		return valor;
 	}
-        
-        private static String operacaoDepositar(String saldo, String valorDebitar){
+
+	private static String operacaoDepositar(String saldo, String valorDebitar){
 		String valor = "";
 		double doubleValor = 0;
 		double doubleSaldo = Double.parseDouble(saldo);

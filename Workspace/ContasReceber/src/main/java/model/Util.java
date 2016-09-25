@@ -10,8 +10,8 @@ package model;
  * @author eduardocorreadesa
  */
 public class Util {
-    
-    public static String CPFCNPJ=null;
-    public static String NOME=null;
-    
+
+	public static String CPFCNPJ=null;
+	public static String NOME=null;
+
 }

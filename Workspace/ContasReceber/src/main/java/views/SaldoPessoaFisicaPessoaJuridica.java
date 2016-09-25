@@ -25,6 +25,7 @@ public class SaldoPessoaFisicaPessoaJuridica extends javax.swing.JFrame {
 	 */
 	public SaldoPessoaFisicaPessoaJuridica() {
 		initComponents();
+		this.setLocationRelativeTo(null);
 	}
 
 	/**

@@ -15,10 +15,10 @@ public class PessoaJuridica {
 	String cnpj;
 	String saldo;
 	String limite;
-        String conta;
-        String agencia;
-        
-        public String getConta() {
+	String conta;
+	String agencia;
+
+	public String getConta() {
 		return conta;
 	}
 	public void setConta(String conta) {
@@ -30,7 +30,7 @@ public class PessoaJuridica {
 	public void setAgencia(String agencia) {
 		this.agencia = agencia;
 	}
-	
+
 	public String getLimite() {
 		return limite;
 	}
@@ -55,6 +55,5 @@ public class PessoaJuridica {
 	public void setCnpj(String cnpj) {
 		this.cnpj = cnpj;
 	}
-
 
 }

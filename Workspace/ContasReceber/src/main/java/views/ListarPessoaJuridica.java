@@ -26,6 +26,7 @@ public class ListarPessoaJuridica extends javax.swing.JFrame {
 	 */
 	public ListarPessoaJuridica() {
 		initComponents();
+		this.setLocationRelativeTo(null);
 	}
 
 	/**

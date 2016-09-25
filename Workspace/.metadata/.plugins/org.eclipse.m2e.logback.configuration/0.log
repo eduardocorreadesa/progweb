@@ -1888,3 +1888,94 @@
 2016-09-25 15:28:49,441 [Worker-410] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2016-09-25 15:28:49,443 [Worker-410] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2016-09-25 15:28:49,443 [Worker-410] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/eduardocorreadesa/Documents/progweb-git/Workspace/ContasReceber/src/test/resources
+2016-09-25 16:03:19,154 [Worker-429] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ContasReceber:ContasReceber:0.0.1-SNAPSHOT @ /Users/eduardocorreadesa/Documents/progweb-git/Workspace/ContasReceber/pom.xml.
+2016-09-25 16:03:19,182 [Worker-429] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for unknown.binary:AbsoluteLayout:jar:SNAPSHOT is missing, no dependency information available
+2016-09-25 16:03:19,615 [Worker-429] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-09-25 16:03:19,619 [Worker-429] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-09-25 16:03:19,622 [Worker-429] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-09-25 16:03:19,623 [Worker-429] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/eduardocorreadesa/Documents/progweb-git/Workspace/ContasReceber/src/test/resources
+2016-09-25 16:03:21,036 [Worker-429] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for unknown.binary:AbsoluteLayout:jar:SNAPSHOT is missing, no dependency information available
+2016-09-25 16:03:21,048 [Worker-429] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-09-25 16:03:21,049 [Worker-429] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-09-25 16:03:21,050 [Worker-429] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-09-25 16:03:21,050 [Worker-429] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/eduardocorreadesa/Documents/progweb-git/Workspace/ContasReceber/src/test/resources
+2016-09-25 16:03:35,016 [Worker-426] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-09-25 16:03:35,017 [Worker-426] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-09-25 16:03:35,018 [Worker-426] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-09-25 16:03:35,018 [Worker-426] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/eduardocorreadesa/Documents/progweb-git/Workspace/ContasReceber/src/test/resources
+2016-09-25 16:03:50,058 [Worker-431] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-09-25 16:03:50,059 [Worker-431] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-09-25 16:03:50,061 [Worker-431] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-09-25 16:03:50,061 [Worker-431] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/eduardocorreadesa/Documents/progweb-git/Workspace/ContasReceber/src/test/resources
+2016-09-25 16:04:01,824 [Worker-430] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-09-25 16:04:01,824 [Worker-430] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-09-25 16:04:01,825 [Worker-430] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-09-25 16:04:01,826 [Worker-430] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/eduardocorreadesa/Documents/progweb-git/Workspace/ContasReceber/src/test/resources
+2016-09-25 16:04:11,870 [Worker-414] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-09-25 16:04:11,870 [Worker-414] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-09-25 16:04:11,872 [Worker-414] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-09-25 16:04:11,872 [Worker-414] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/eduardocorreadesa/Documents/progweb-git/Workspace/ContasReceber/src/test/resources
+2016-09-25 16:04:25,738 [Worker-430] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-09-25 16:04:25,739 [Worker-430] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-09-25 16:04:25,740 [Worker-430] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-09-25 16:04:25,740 [Worker-430] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/eduardocorreadesa/Documents/progweb-git/Workspace/ContasReceber/src/test/resources
+2016-09-25 16:04:28,963 [Worker-430] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-09-25 16:04:28,963 [Worker-430] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-09-25 16:04:28,966 [Worker-430] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-09-25 16:04:28,966 [Worker-430] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/eduardocorreadesa/Documents/progweb-git/Workspace/ContasReceber/src/test/resources
+2016-09-25 16:04:35,802 [Worker-431] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-09-25 16:04:35,803 [Worker-431] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-09-25 16:04:35,804 [Worker-431] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-09-25 16:04:35,804 [Worker-431] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/eduardocorreadesa/Documents/progweb-git/Workspace/ContasReceber/src/test/resources
+2016-09-25 16:04:39,801 [Worker-430] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-09-25 16:04:39,801 [Worker-430] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-09-25 16:04:39,802 [Worker-430] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-09-25 16:04:39,802 [Worker-430] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/eduardocorreadesa/Documents/progweb-git/Workspace/ContasReceber/src/test/resources
+2016-09-25 16:04:46,085 [Worker-431] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-09-25 16:04:46,085 [Worker-431] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-09-25 16:04:46,086 [Worker-431] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-09-25 16:04:46,086 [Worker-431] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/eduardocorreadesa/Documents/progweb-git/Workspace/ContasReceber/src/test/resources
+2016-09-25 16:04:52,185 [Worker-429] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-09-25 16:04:52,185 [Worker-429] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-09-25 16:04:52,187 [Worker-429] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-09-25 16:04:52,187 [Worker-429] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/eduardocorreadesa/Documents/progweb-git/Workspace/ContasReceber/src/test/resources
+2016-09-25 16:04:58,235 [Worker-430] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-09-25 16:04:58,235 [Worker-430] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-09-25 16:04:58,236 [Worker-430] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-09-25 16:04:58,236 [Worker-430] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/eduardocorreadesa/Documents/progweb-git/Workspace/ContasReceber/src/test/resources
+2016-09-25 16:05:03,986 [Worker-430] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-09-25 16:05:03,987 [Worker-430] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-09-25 16:05:03,988 [Worker-430] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-09-25 16:05:03,988 [Worker-430] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/eduardocorreadesa/Documents/progweb-git/Workspace/ContasReceber/src/test/resources
+2016-09-25 16:05:08,648 [Worker-427] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-09-25 16:05:08,648 [Worker-427] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-09-25 16:05:08,650 [Worker-427] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-09-25 16:05:08,650 [Worker-427] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/eduardocorreadesa/Documents/progweb-git/Workspace/ContasReceber/src/test/resources
+2016-09-25 16:05:13,140 [Worker-430] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-09-25 16:05:13,142 [Worker-430] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-09-25 16:05:13,144 [Worker-430] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-09-25 16:05:13,145 [Worker-430] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/eduardocorreadesa/Documents/progweb-git/Workspace/ContasReceber/src/test/resources
+2016-09-25 16:05:18,522 [Worker-427] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-09-25 16:05:18,522 [Worker-427] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-09-25 16:05:18,524 [Worker-427] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-09-25 16:05:18,524 [Worker-427] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/eduardocorreadesa/Documents/progweb-git/Workspace/ContasReceber/src/test/resources
+2016-09-25 16:05:22,560 [Worker-426] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-09-25 16:05:22,561 [Worker-426] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-09-25 16:05:22,562 [Worker-426] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-09-25 16:05:22,562 [Worker-426] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/eduardocorreadesa/Documents/progweb-git/Workspace/ContasReceber/src/test/resources
+2016-09-25 16:05:27,632 [Worker-414] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-09-25 16:05:27,633 [Worker-414] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-09-25 16:05:27,634 [Worker-414] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-09-25 16:05:27,634 [Worker-414] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/eduardocorreadesa/Documents/progweb-git/Workspace/ContasReceber/src/test/resources
+2016-09-25 16:05:32,468 [Worker-429] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-09-25 16:05:32,468 [Worker-429] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-09-25 16:05:32,470 [Worker-429] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-09-25 16:05:32,470 [Worker-429] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/eduardocorreadesa/Documents/progweb-git/Workspace/ContasReceber/src/test/resources
+2016-09-25 16:05:36,754 [Worker-432] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-09-25 16:05:36,755 [Worker-432] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-09-25 16:05:36,756 [Worker-432] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-09-25 16:05:36,756 [Worker-432] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/eduardocorreadesa/Documents/progweb-git/Workspace/ContasReceber/src/test/resources
+2016-09-25 16:05:41,177 [Worker-431] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-09-25 16:05:41,177 [Worker-431] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-09-25 16:05:41,179 [Worker-431] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-09-25 16:05:41,179 [Worker-431] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/eduardocorreadesa/Documents/progweb-git/Workspace/ContasReceber/src/test/resources

@@ -19,9 +19,9 @@ public class PessoaJuridicaCollection {
 			pessoaJuridica.put("cnpj", pessoa.getCnpj());
 			pessoaJuridica.put("saldo", pessoa.getSaldo());
 			pessoaJuridica.put("limite", pessoa.getLimite());
-                        pessoaJuridica.put("conta", pessoa.getConta());
+			pessoaJuridica.put("conta", pessoa.getConta());
 			pessoaJuridica.put("agencia", pessoa.getAgencia());
-                        
+
 			DBCollection financeiro = ConnectCollection.connectCollection("pessoaJuridica");
 
 			financeiro.insert(pessoaJuridica);
@@ -46,9 +46,9 @@ public class PessoaJuridicaCollection {
 				pessoaJuridica.setCnpj(docsDBObject.get("cnpj").toString());
 				pessoaJuridica.setSaldo(docsDBObject.get("saldo").toString());
 				pessoaJuridica.setLimite(docsDBObject.get("limite").toString());
-                                pessoaJuridica.setAgencia(docsDBObject.get("agencia").toString());
+				pessoaJuridica.setAgencia(docsDBObject.get("agencia").toString());
 				pessoaJuridica.setConta(docsDBObject.get("conta").toString());
-                        
+
 				listPessoaJuridica.add(pessoaJuridica);
 				pessoaJuridica = new PessoaJuridica();
 			}

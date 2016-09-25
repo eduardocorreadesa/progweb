@@ -11,6 +11,16 @@ package model;
  */
 public class PessoaFisica {
 
+	String limite;
+	String nome;
+	String cpf;
+	String dataNascimento;
+	String sexo;
+	String estadoCivil;
+	String agencia;
+	String conta;
+	String saldo;
+
 	public String getNome() {
 		return nome;
 	}
@@ -53,7 +63,7 @@ public class PessoaFisica {
 	public void setConta(String conta) {
 		this.conta = conta;
 	}
-	
+
 	public String getSaldo() {
 		return saldo;
 	}
@@ -66,14 +76,5 @@ public class PessoaFisica {
 	public void setLimite(String limite) {
 		this.limite = limite;
 	}
-	String limite;
-	String nome;
-	String cpf;
-	String dataNascimento;
-	String sexo;
-	String estadoCivil;
-	String agencia;
-	String conta;
-	String saldo;
 
 }
