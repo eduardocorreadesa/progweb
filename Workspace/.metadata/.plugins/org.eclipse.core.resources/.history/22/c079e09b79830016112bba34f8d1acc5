@@ -121,9 +121,20 @@ public class PessoaFisicaCollection {
 			financeiro.update(findQuery, new BasicDBObject("$set", 
 					new BasicDBObject("limite", pessoa.getLimite())));
 
+
+
+
+
+
+
+
+
+
+
 		}catch(Exception e){
 			System.out.print("updatePessoaFisicaPorCPF "+e);
 		}
+
 
 	}
 

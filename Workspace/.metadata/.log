@@ -342,3 +342,9 @@ Binding(COMMAND+SHIFT+V,
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-09-25 20:41:01.348
+!MESSAGE The POM for unknown.binary:AbsoluteLayout:jar:SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-09-25 20:41:04.600
+!MESSAGE The POM for unknown.binary:AbsoluteLayout:jar:SNAPSHOT is missing, no dependency information available

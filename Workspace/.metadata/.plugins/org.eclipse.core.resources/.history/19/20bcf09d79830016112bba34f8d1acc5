@@ -125,6 +125,7 @@ public class PessoaFisicaCollection {
 			System.out.print("updatePessoaFisicaPorCPF "+e);
 		}
 
+
 	}
 
 	public static void removePessoaFisicaPorCPF(String Cpf, PessoaFisica pessoa) throws UnknownHostException{
