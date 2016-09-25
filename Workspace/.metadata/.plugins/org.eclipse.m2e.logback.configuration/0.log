@@ -1979,3 +1979,8 @@
 2016-09-25 16:05:41,177 [Worker-431] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2016-09-25 16:05:41,179 [Worker-431] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2016-09-25 16:05:41,179 [Worker-431] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/eduardocorreadesa/Documents/progweb-git/Workspace/ContasReceber/src/test/resources
+2016-09-25 16:16:13,718 [Worker-439] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-09-25 16:16:13,721 [Worker-439] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-09-25 16:16:13,723 [Worker-439] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-09-25 16:16:13,723 [Worker-439] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/eduardocorreadesa/Documents/progweb-git/Workspace/ContasReceber/src/test/resources
+2016-09-25 18:03:07,736 [Worker-2] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
