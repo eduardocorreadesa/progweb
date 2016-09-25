@@ -46,6 +46,10 @@ public class CadastrarPessoaJuridica extends javax.swing.JFrame {
         inputSaldo = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
         inputLimite = new javax.swing.JTextField();
+        jLabel6 = new javax.swing.JLabel();
+        inputAgencia = new javax.swing.JTextField();
+        jLabel7 = new javax.swing.JLabel();
+        inputConta = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -79,6 +83,10 @@ public class CadastrarPessoaJuridica extends javax.swing.JFrame {
 
         jLabel5.setText("Limite:");
 
+        jLabel6.setText("Agencia:");
+
+        jLabel7.setText("Conta:");
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -93,12 +101,16 @@ public class CadastrarPessoaJuridica extends javax.swing.JFrame {
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jLabel4)
                             .addComponent(jLabel3)
-                            .addComponent(jLabel5))
+                            .addComponent(jLabel5)
+                            .addComponent(jLabel6)
+                            .addComponent(jLabel7))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(inputCNPJ)
                             .addComponent(inputSaldo)
-                            .addComponent(inputLimite))))
+                            .addComponent(inputLimite)
+                            .addComponent(inputAgencia)
+                            .addComponent(inputConta))))
                 .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap(79, Short.MAX_VALUE)
@@ -124,13 +136,21 @@ public class CadastrarPessoaJuridica extends javax.swing.JFrame {
                     .addComponent(inputCNPJ, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel4)
-                    .addComponent(inputSaldo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabel6)
+                    .addComponent(inputAgencia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel7)
+                    .addComponent(inputConta, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(3, 3, 3)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(inputSaldo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel4))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
                     .addComponent(inputLimite, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 147, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 86, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnSalvar)
                     .addComponent(btnCancelar))
@@ -169,6 +189,8 @@ public class CadastrarPessoaJuridica extends javax.swing.JFrame {
 			pessoaJuridica.setCnpj(inputCNPJ.getText());
 			pessoaJuridica.setSaldo(inputSaldo.getText());
 			pessoaJuridica.setLimite(inputLimite.getText());
+                        pessoaJuridica.setConta(inputConta.getText());
+                        pessoaJuridica.setAgencia(inputAgencia.getText());
 
 			PessoaJuridicaCollection pessoaJuridicaCollection = new PessoaJuridicaCollection();
 			pessoaJuridicaCollection.createPessoaJuridica(pessoaJuridica);
@@ -177,6 +199,8 @@ public class CadastrarPessoaJuridica extends javax.swing.JFrame {
 			inputCNPJ.setText(""); 
 			inputSaldo.setText("");
 			inputLimite.setText("");
+                        inputAgencia.setText("");
+                        inputConta.setText("");
 		} catch (UnknownHostException ex) {
 			Logger.getLogger(CadastrarPessoaFisica.class.getName()).log(Level.SEVERE, null, ex);
 		}
@@ -226,7 +250,9 @@ public class CadastrarPessoaJuridica extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnCancelar;
     private javax.swing.JButton btnSalvar;
+    private javax.swing.JTextField inputAgencia;
     private javax.swing.JTextField inputCNPJ;
+    private javax.swing.JTextField inputConta;
     private javax.swing.JTextField inputLimite;
     private javax.swing.JTextField inputNomeFantasia;
     private javax.swing.JTextField inputSaldo;
@@ -235,6 +261,8 @@ public class CadastrarPessoaJuridica extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }

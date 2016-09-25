@@ -57,12 +57,16 @@
                               <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
                               <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
                               <Component id="jLabel5" alignment="1" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel6" alignment="1" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel7" alignment="1" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="inputCNPJ" max="32767" attributes="0"/>
                               <Component id="inputSaldo" max="32767" attributes="0"/>
                               <Component id="inputLimite" alignment="0" max="32767" attributes="0"/>
+                              <Component id="inputAgencia" alignment="0" max="32767" attributes="0"/>
+                              <Component id="inputConta" alignment="0" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -97,15 +101,25 @@
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel6" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="inputAgencia" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="inputConta" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="inputSaldo" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="inputLimite" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="147" max="32767" attributes="0"/>
+                  <EmptySpace pref="86" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="btnSalvar" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="btnCancelar" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -167,6 +181,20 @@
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="inputLimite">
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel6">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Agencia:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="inputAgencia">
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel7">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Conta:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="inputConta">
         </Component>
       </SubComponents>
     </Container>

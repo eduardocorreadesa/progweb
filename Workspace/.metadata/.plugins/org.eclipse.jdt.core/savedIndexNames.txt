@@ -14,7 +14,6 @@ INDEX VERSION 1.129+/Users/eduardocorreadesa/Documents/progweb-git/Workspace/.me
 1271342938.index
 2465022724.index
 2117113611.index
-1472650458.index
 2979435446.index
 2932191785.index
 576073405.index
