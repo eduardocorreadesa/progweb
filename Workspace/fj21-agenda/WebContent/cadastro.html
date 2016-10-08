@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Exercicio Servelet</title>
+<link rel="stylesheet" href="styles.css">
+<script>
+function myFunction() {
+    document.getElementById("formCadastro").reset();
+}
+</script>
+</head>
+<body>
+	<form action="cadastro" id="formCadastro">
+		<div id="divCadastrar" align="center">
+			<h2>Cadastrar Pessoa</h2>
+
+			<div id="subDivInterna" align="center">
+
+				<div id="subDivCadastrar" align="center">
+
+
+					Nome: <input type="text" name="nome"> <br> Data
+					Nascimento: <input type="date" name="dataNascimento"> <br>
+
+					Sexo: <select name="sexo">
+						<option > </option>
+						<option value="masculino">masculino</option>
+						<option value="feminino">feminino</option>
+					</select>
+				</div>
+
+				<br> <br>
+			</div>
+
+			<fieldset id="divEscolaridade">
+				<legend>Escolaridade</legend>
+
+				<div id="subDivFundamentalMedio">
+					<input type="radio" name="ensino" value="ensinoFundamental"> Ensino Fundamental<br>
+					<input type="radio" name="ensino" value="ensinoMedio"> Esino	Medio<br>
+				</div>
+
+				<div id="subDivSuperior">
+					<input type="radio" name="ensino" value="superiorIncompleto"> Superior Incompleto<br>
+					<input type="radio" name="ensino" value="superiorCompleto"> Superior Completo<br>
+				</div>
+
+			</fieldset>
+			<br>
+
+			<fieldset id="divInteresse">
+				<legend>Interesses</legend>
+
+
+				<div id="subDivInteresseLeft">
+
+					<input type="checkbox" name="interesses" value="games"> Games<br>
+					<input type="checkbox" name="interesses" value="esportes"> Esportes<br>
+					<input type="checkbox" name="interesses" value="entreterimento"> Entreterimento<br>
+					<input type="checkbox" name="interesses" value="politica"> Politica<br>
+				</div>
+
+				<div id="subDivInteresseRight">
+					<input type="checkbox" name="interesses" value="relacionamento"> Relacionamento<br>
+					<input type="checkbox" name="interesses" value="noticias"> Noticias<br>
+					<input type="checkbox" name="interesses" value="tecnologia"> Tecnologia<br>
+					<input type="checkbox" name="interesses" value="animais"> Animais<br>
+					<input type="checkbox" name="interesses" value="outros"> Outros <br>
+					<input type="text"	name="inputOutros"><br>
+				</div>
+		</div>
+
+		</fieldset>
+
+		<br>
+		<div id="divBotoes" align="center">
+			<input type="submit" value="Cadastrar">
+			<input type="button" onclick="myFunction()" value="Limpar">
+
+		</div>
+	</form>
+
+</body>
+</html>

@@ -1,9 +1,0 @@
-package controllers;
-
-public class App {
-	public static void main( String[] args )
-	{
-		JFrame newFrame = new JFrame();
-		newFrame.setVisible(true);
-	}
-}

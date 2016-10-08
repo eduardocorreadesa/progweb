@@ -1,0 +1,95 @@
+#divCadastrar {
+    border-radius: 25px;
+    border: 2px solid black;
+    padding: 20px;
+    width: 60%;
+    height: 80%;
+    margin: auto;
+}
+
+#subDivInterna {
+  border: 2px solid black;
+  padding: 20px;
+  width: 50%;
+  height: 100px;
+  margin: auto;
+
+}
+
+#subDivCadastrar {
+      float:left;
+      text-align: left;
+       height:100px;
+       width:50%;
+}
+
+#divBotoes {
+    border-radius: 25px;
+    border: 2px solid black;
+    padding: 20px;
+    width: 60%;
+    height: 70%;
+    margin: auto;
+
+}
+
+#divEscolaridade {
+    border: 2px solid black;
+    padding: 20px;
+    width: 50%;
+    height: 50%;
+    margin: auto;
+
+}
+
+#divInteresse {
+    border: 2px solid black;
+    padding: 20px;
+    width: 50%;
+    height: 50%;
+
+
+}
+
+
+#subDivFundamentalMedio {
+
+    width: 50%;
+    height:50px;
+    float:left;
+    text-align: left;
+
+
+}
+
+
+
+#subDivSuperior {
+    text-align:left;
+     height:50px;
+     width:75%;
+
+
+
+
+}
+#subDivInteresseLeft {
+
+    width: 50%;
+    height:50%;
+    float:left;
+    text-align: left;
+
+
+}
+
+#subDivInteresseRight{
+float:right;
+text-align: left;
+     height:50%;
+     width:45%;
+
+
+
+
+}
