@@ -1,0 +1,11 @@
+127.0.0.1 - - [13/Oct/2016:20:20:45 -0300] "GET / HTTP/1.1" 404 1000
+0:0:0:0:0:0:0:1 - - [13/Oct/2016:20:20:48 -0300] "GET /fj21-agenda/cadastro.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [13/Oct/2016:20:20:48 -0300] "GET /fj21-agenda/styles.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [13/Oct/2016:20:20:49 -0300] "GET /favicon.ico HTTP/1.1" 404 1022
+0:0:0:0:0:0:0:1 - - [13/Oct/2016:20:21:08 -0300] "GET /fj21-agenda/cadastro?nome=dwedew&dataNascimento=2016-10-13&sexo=masculino&ensino=ensinoFundamental&interesses=games&interesses=esportes&inputOutros= HTTP/1.1" 200 1044
+0:0:0:0:0:0:0:1 - - [13/Oct/2016:20:25:56 -0300] "GET /fj21-agenda/cadastro?nome=dwedew&dataNascimento=2016-10-13&sexo=masculino&ensino=ensinoFundamental&interesses=games&interesses=esportes&inputOutros= HTTP/1.1" 200 1044
+0:0:0:0:0:0:0:1 - - [13/Oct/2016:20:27:50 -0300] "GET /fj21-agenda/cadastro?nome=dwedew&dataNascimento=2016-10-13&sexo=masculino&ensino=ensinoFundamental&interesses=games&interesses=esportes&inputOutros= HTTP/1.1" 200 1044
+127.0.0.1 - - [13/Oct/2016:20:28:06 -0300] "GET / HTTP/1.1" 404 1000
+0:0:0:0:0:0:0:1 - - [13/Oct/2016:20:28:14 -0300] "GET /fj21-agenda/cadastro?nome=dwedew&dataNascimento=2016-10-13&sexo=masculino&ensino=ensinoFundamental&interesses=games&interesses=esportes&inputOutros= HTTP/1.1" 200 1044
+127.0.0.1 - - [13/Oct/2016:20:31:37 -0300] "GET / HTTP/1.1" 404 1000
+0:0:0:0:0:0:0:1 - - [13/Oct/2016:20:31:44 -0300] "GET /fj21-agenda/cadastro?nome=dwedew&dataNascimento=2016-10-13&sexo=masculino&ensino=ensinoFundamental&interesses=games&interesses=esportes&inputOutros= HTTP/1.1" 200 1044

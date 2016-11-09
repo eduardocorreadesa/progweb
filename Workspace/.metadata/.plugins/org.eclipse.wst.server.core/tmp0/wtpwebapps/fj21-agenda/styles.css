@@ -18,7 +18,7 @@
 #subDivCadastrar {
 	float: left;
 	text-align: left;
-	height: 100px;
+	height: 90px;
 	width: 50%;
 }
 
@@ -27,7 +27,7 @@
 	border: 2px solid black;
 	padding: 20px;
 	width: 60%;
-	height: 70%;
+	height: 50px;
 	margin: auto;
 }
 
@@ -71,4 +71,42 @@
 	text-align: left;
 	height: 50%;
 	width: 45%;
+}
+
+#cadastrarButton {
+	height: 100;
+	width: 100;
+}
+
+#divPessoaCadastrada {
+	border-radius: 25px;
+	border: 2px solid black;
+	padding: 20px;
+	width: 60%;
+	height: 400px;
+	margin: auto;
+}
+
+#subDivInternaPessoaCadastrada {
+  margin: auto;
+	text-align: left;
+	height: 90px;
+	width: 50%;
+}
+
+#fiedSetInteresse {
+	border: 2px solid black;
+	padding: 20px;
+	width: 90%;
+	height: 100px;
+	margin: auto;
+}
+
+#divVoltar {
+	border-radius: 25px;
+	border: 2px solid black;
+	padding: 20px;
+	width: 60%;
+	height: 50px;
+	margin: auto;
 }

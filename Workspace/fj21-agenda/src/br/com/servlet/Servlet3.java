@@ -21,7 +21,7 @@ public class Servlet3 extends HttpServlet{
 		out.println("<title>Primeira Servlet</title>");
 		out.println("</head>");
 		out.println("<body>");
-		out.println("<h1>Oi mundo Servlet!</h1>");
+		out.println("<h1>Oi mundo Servlet 3!</h1>");
 		out.println("</body>");
 	}
 

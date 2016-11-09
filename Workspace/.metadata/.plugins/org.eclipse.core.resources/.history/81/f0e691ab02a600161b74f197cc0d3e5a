@@ -1,0 +1,55 @@
+package br.com.servlet;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.Arrays;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+@WebServlet("/cadastrox")
+public class Cadastro extends HttpServlet {
+	
+	protected void service(HttpServletRequest request,
+			HttpServletResponse response)
+					throws IOException, ServletException {
+
+		
+
+		String nome = request.getParameter("nome");
+		String dataEmTexto = request.getParameter("dataNascimento");
+		String sexo = request.getParameter("sexo");
+		String ensino = request.getParameter("ensino");
+		String[] interesses = request.getParameterValues("interesses");
+		String interesse = Arrays.toString(interesses);
+
+		
+		PrintWriter out = response.getWriter();
+		
+
+		out.println("<script type=\"text/javascript\">");
+		out.println("alert('Pessoa cadastrada com sucesso =D');");
+		out.println("location='pessoaCadastrada.jsp';");
+		out.println("</script>");
+		
+
+
+		System.out.println(nome);
+		System.out.println(dataEmTexto);
+		System.out.println(sexo);
+		System.out.println(ensino);
+		System.out.println(interesse);
+		
+		request.getRequestDispatcher("pessoaCadastradaxx.jsp").forward(request, response);
+		
+		
+		
+		
+		
+	}
+
+}
