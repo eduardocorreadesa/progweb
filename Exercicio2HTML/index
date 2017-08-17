@@ -23,7 +23,7 @@ tr:nth-child(even) {
 
 <table>
   <tr>
-    <th>Empresa</th>
+    <th>Empresa teste</th>
     <th>Colaborador</th>
     <th>Editar</th>
   </tr>
